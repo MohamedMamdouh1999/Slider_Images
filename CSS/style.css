@@ -1,0 +1,41 @@
+.caption {
+    bottom: -150px;
+    width: 90%;
+    right: 5%;
+    left: 5%;
+    transition: bottom .4s;
+}
+.item:hover .caption {
+    bottom: 20px;
+}
+.item {
+    cursor: pointer;
+}
+#lightContainer {
+    background-color: rgba(0, 0, 0, .7);
+    position: fixed;
+    inset: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+#lightBox {
+    width: 50%;
+    height: 80%;
+    background-image: url(../IMGS/portfolio-1.jpg);
+    background-position: center;
+    background-size: 100% 110%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+i {
+    cursor: pointer;
+}
+@media screen and (max-width:991px) {
+    #lightBox {
+        width: 80%;
+        background-size: cover;
+    }
+}
